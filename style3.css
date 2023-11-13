@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(72, 71, 71); 
+   
+}
+html{
+    font-size: 62.5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: #FF1A1A;
+    box-shadow: 0px 0px 1.5rem 1rem rgba(0,0,0,.5);
+    height:6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    position:fixed;
+    z-index: 1;
+   
+}
+.delivery-guy-info{
+    display: flex;
+    gap: 1rem;
+}
+.balance-info{
+    display: flex;
+    gap: 1rem;
+}
+
+#delivery-info-container{
+    width: 100%;
+    background-color:  rgb(119, 106, 106);
+    padding:2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+#delivery-info-container .delivery-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 50%;
+    background-color: aliceblue;
+    text-align: left;
+    padding: 2rem;
+    margin: .5rem;
+}
+#delivery-info-container .order-info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: aliceblue;
+    text-align: left;
+    padding: 2rem;
+    margin: .5rem;
+    overflow: hidden;
+
+}
+.delivery-info div{
+    padding: .4rem;
+}
+#delivery-info-container .order-info .section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.order-info div{
+    padding: .4rem;
+}
+.order-info .section button{
+    padding: .3rem;
+    border-radius: .5rem;
+}
+.section .order-tick{
+    padding: .5rem;
+    width: 8rem;
+    background-color: rgb(72, 71, 71);
+    
+}

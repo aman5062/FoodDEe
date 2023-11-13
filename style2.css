@@ -1,0 +1,263 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(72, 71, 71); 
+   
+}
+html{
+    font-size: 62.5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: #FF1A1A;
+    box-shadow: 0px 0px 1.5rem 1rem rgba(0,0,0,.5);
+    height:15rem;
+    display: flex;
+    justify-content: center;
+    /* padding: rem; */
+    font-size: 12rem;
+    font-weight: 1000;
+    position:fixed;
+    z-index: 1;
+   
+}
+nav div{
+    color: rgb(47, 37, 37);
+   
+}
+#cart-details-container{
+    /* height: 100vh; */
+    width: 100%;
+    background-color:  rgb(72, 71, 71);
+    padding:2rem;
+    /* margin: rem; */
+    margin-top: 15rem;
+   
+    
+}
+#cart-details-container .cart-details{
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    padding: 2rem;
+    gap: 2.09rem;
+    width: 100%;
+    /* height: 70vh; */
+    background-color: rgb(107, 102, 102);
+    text-align:center;
+    justify-content:center;
+    text-align: center;
+    border-radius: 3rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+  
+  
+    
+}
+#cart-details-container .cart-details div{
+    /* background-color: #FF1A1A; */
+    height: 9rem;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(223, 208, 208);
+    /* width: 16.6%; */
+   
+    
+}
+.cart-details .cart-img{
+    transform: translateX(7rem);
+    width: 7rem;
+    padding: 0%; 
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 1px black solid;
+}
+.cart-details .charr{
+    background-color:transparent;
+    width: 15rem;
+    border-radius: 2.5rem;
+    /* transform: translateX(-3rem); */
+}
+.cart-details .equal{
+    background-color:transparent;
+    width:15rem;
+    border-radius: 2.5rem;
+    /* font-size: 8rem; */
+    /* transform: translateX(-8rem); */
+}
+.cart-details .Xtimes{
+    border-radius: 2.5rem;
+  
+    /* transform: translateX(-15rem); */
+}
+.cart-details .dustdin{
+    
+    border-radius: 5rem;
+    transition: all .6s linear;
+   
+}
+.cart-details .dustdin:hover{
+  
+    color: rgb(255, 255, 255);
+
+}
+#discriptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+#discriptions p{
+    width: 100%;
+    font-size: 3rem;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#data{
+    width: 100%;
+}
+#total-amount{
+    /* margin-top: rem; */
+    /* height: 20rem; */
+    width: 100%;
+    background-color:aliceblue;
+    border-radius: 3rem;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    text-align: center;
+    overflow: hidden;
+    
+   
+}
+#total-amount div{
+    text-align: center;
+    /* height: 8rem; */
+    /* width: 100%; */
+    /* background-color: #FF1A1A; */
+    padding: 2.1rem;
+    margin: rem;
+    font-family:'Courier New', Courier, monospace;
+
+}
+#total-amount .total{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 3rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+    transform: translateX(-2.6rem);
+   
+}
+#total-amount .total .final-amount{
+    display: flex;
+    font-size: 3rem;
+    transform: translateX(4rem);
+}
+#total-amount .lowest{
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 3rem;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+}
+#total-amount h1{
+    font-size: 4rem;
+}
+.distotal button{
+    font-size: 1.7rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    padding:1rem 4rem 1rem 4rem;
+    border-radius: 2rem;
+    transition: all .7s linear;
+}
+.distotal button:hover{
+    background-color: rgb(72, 71, 71);
+    color: aliceblue;
+    cursor: pointer;
+}
+@media only screen and (min-width: 998px) {
+    /* tablets and desktop */
+    html{
+        font-size: 60%;
+    }
+    .cart-details .equal{
+        transform: translateX(1.5rem);
+    }
+    .distotal button{
+        font-size: 2.7rem;
+        
+    }
+}
+@media only screen and (max-width: 998px) {
+    /* phones */
+  html{
+      font-size: 50%;
+  }
+  .cart-details .equal{
+    transform: translateX(1rem);
+}
+.distotal button{
+    font-size: 2.7rem;
+    
+}
+}
+@media only screen and (max-width: 767px) {
+    /* phones */
+  html{
+      font-size: 42%;
+  }
+  .distotal button{
+    font-size: 2.7rem;
+    
+}
+
+}
+@media only screen and (max-width: 668px)  {
+    /* portrait phones */
+    html{
+        font-size: 25%;
+    }
+ 
+    #cart-details-container .cart-details div{
+        font-size: 3rem;
+    }
+    .distotal button{
+        font-size: 4rem;
+        
+    }
+    #cart-details-container{
+        padding:0rem; 
+    }
+    #cart-details-container .cart-details{    
+        padding: 4rem;
+}
+}
+@media only screen and (max-width: 400px)  {
+    /* portrait phones */
+    html{
+        font-size: 20%;
+    }
+}
+
