@@ -23,10 +23,59 @@
                 LOGIN 
              </button>
              <div class="cart">
-                      CART <i class="fa-solid fa-cart-shopping"></i>
-             </div>       
+                <a href="#"><i class="fa-solid fa-clock"></i></a>
+             </div> 
+             <div class="cart">
+                      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+             </div>  
+               
         </div>
     </nav>
+    <div class="filter">
+        <select name="food-selector" id="food-selector">
+          <option value="veg">Veg</option>
+          <option value="non-veg">Non-veg</option>
+        </select>
+    </div>
+    <section id="food-suggestions">
+        <div class="choices" >
+            Top-Choices
+        </div>
+        <div class="suggestion-items">
+           <div class="fimage">
+            <img src="image/sfood1.jpg" alt="photo" width="100%" height="100%">
+           </div>
+
+           <div class="fimage">
+            <img src="image/sfood2.jpg" alt="photo" width="100%" height="100%">
+           </div>
+
+           <div class="fimage">
+            <img src="image/sfood3.jpg" alt="photo" width="100%" height="100%">
+           </div>
+
+           <div class="fimage">
+            <img src="image/sfood4.jpg" alt="photo" width="100%" height="100%">
+           </div>
+
+           <div class="fimage">
+             <img src="image/sfood5.jpg" alt="photo" width="100%" height="100%">
+           </div>
+
+           <div class="fimage">
+            <img src="image/sfood6.jpg" alt="photo" width="100%" height="100%">
+           </div>
+
+           <div class="fimage">
+            <img src="image/sfood7.jpg" alt="photo" width="100%" height="100%">
+           </div>
+
+           <div class="fimage">
+            <img src="image/sfood8.jpg" alt="photo" width="100%" height="100%">
+           </div>
+        </div>
+
+    </section>
     <section id="food-items">
         <div class="items">
             Food Items
@@ -34,11 +83,17 @@
         <div class="box-container" >
             <div class="box">
                 <div class="image">
-                    <img src="image/food1.jpg" alt="photo" width="100%" height="100%" style="border-radius: 2rem;">
+                    <img src="/image/food1.jpg" alt="photo" width="100%" height="100%" style="border-radius: 2rem;">
                 </div>
                 <div class="content">
-                    <h2>Pizza</h2>
-                    <button>Order Now</button>
+                    <h2>Pizza</h2> <br>
+                    <h3><i class="fa-solid fa-indian-rupee-sign"></i>200/piece</h3>
+                 
+                         <button class="amount-change">-</button>
+                         <button>0</button>
+                         <button class="amount-change">+</button><br>
+                         <button id="order">ADD</button>
+                    
                 </div>
             </div>
 
@@ -47,8 +102,12 @@
                     <img src="image/food2.jpg" alt="photo"  width="100%" height="100%" style="border-radius: 2rem;" >
                 </div>
                 <div class="content">
-                    <h2>Burger</h2>
-                    <button>Order Now</button>
+                    <h2>Burger</h2><br>
+                    <h3><i class="fa-solid fa-indian-rupee-sign"></i>50/piece</h3>
+                    <button class="amount-change">-</button>
+                    <button>0</button>
+                    <button class="amount-change">+</button><br>
+                    <button id="order">ADD</button>
                     
                 </div>
             </div>
@@ -58,10 +117,14 @@
                     <img src="image/food3.jpg" alt="photo"  width="100%" height="100%" style="border-radius: 2rem;">
                 </div>
                 <div class="content">
-                    <h2>Samosa</h2>
+                    <h2>Samosa</h2><br>
+                    <h3><i class="fa-solid fa-indian-rupee-sign"></i>10/piece </h3>
                   
 
-                    <button>Order Now</button>
+                    <button class="amount-change">-</button>
+                    <button>0</button>
+                    <button class="amount-change">+</button><br>
+                    <button id="order">ADD</button>
                     
                 </div>
             </div>
@@ -71,20 +134,42 @@
                     <img src="image/food4.jpg" alt="photo"  width="100%" height="100%" style="border-radius: 2rem;">
                 </div>
                 <div class="content">
-                    <h2>Idli</h2>
+                    <h2>Idli</h2><br>
+                    <h3><i class="fa-solid fa-indian-rupee-sign"></i>15/piece </h3>
 
-                    <button>Order Now</button>
+                    <button class="amount-change">-</button>
+                    <button>0</button>
+                    <button class="amount-change">+</button><br>
+                    <button id="order">ADD</button>
                     
                 </div>
             </div>
             
             <div class="box">
                 <div class="image">
-                    <img src="image/food2.jpg" alt="photo"  width="100%" height="100%" style="border-radius: 2rem;" >
+                    <img src="image/food5.jpg" alt="photo"  width="100%" height="100%" style="border-radius: 2rem;" >
                 </div>
                 <div class="content">
-                    <h2>Burger</h2>
-                    <button>Order Now</button>
+                    <h2>Desert</h2><br>
+                    <h3><i class="fa-solid fa-indian-rupee-sign"></i>80/piece</h3>
+                    <button class="amount-change">-</button>
+                    <button>0</button>
+                    <button class="amount-change">+</button><br>
+                    <button id="order">ADD</button>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="image/food6.jpg" alt="photo"  width="100%" height="100%" style="border-radius: 2rem;" >
+                </div>
+                <div class="content">
+                    <h2>Sushi</h2><br>
+                    <h3><i class="fa-solid fa-indian-rupee-sign"></i>350/piece </h3>
+                    <button class="amount-change">-</button>
+                    <button>0</button>
+                    <button class="amount-change">+</button><br>
+                    <button id="order">ADD</button>
                     
                 </div>
             </div>

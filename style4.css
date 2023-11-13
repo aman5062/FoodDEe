@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+nav{
+    font-family:'Times New Roman', Times, serif;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(229, 132, 14);
+    box-shadow: 0px 0px 1.5rem 1rem rgba(0,0,0,.5);
+    height: 10rem;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position:fixed;
+    z-index: 1;
+}
+nav .history{
+    font-size: 3rem;
+}
+/* .main-box{
+    background-color:rgb(23, 23, 209);
+    
+
+} */
+#etihas{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    background-color:rgb(202, 202, 208);
+    /* height: 100vh; */
+    padding:1rem;
+    margin: auto;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    
+}
+.order{
+    width: 100%;
+    /* background-color: rgb(125, 125, 140); */
+    border-radius: 1rem;
+}
+.order h1{
+    
+    font-size: 2.4rem;
+    font-style: italic;
+    background-color: rgb(109, 107, 107);
+    border-radius: 1rem;
+    color: aliceblue;
+}
+.order .history{
+    padding: 2rem;
+    
+}
+.order .history p{
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+.order .history h2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 10rem; */
+    font-size: 2rem;
+}
+@media only screen and (max-width: 468px)  {
+    /* portrait phones */
+    html{
+        font-size: 50%;
+    }
+}
