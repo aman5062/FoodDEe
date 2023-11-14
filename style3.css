@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(72, 71, 71); 
+    background-color:rgb(0, 0, 0); 
    
 }
 html{
@@ -15,7 +15,7 @@ nav{
     top: 0%;
     left: 0%;
     width: 100%;
-    background-color: #FF1A1A;
+    background-color: #FFE735 ;
     box-shadow: 0px 0px 1.5rem 1rem rgba(0,0,0,.5);
     height:6rem;
     display: flex;
@@ -38,7 +38,7 @@ nav{
 
 #delivery-info-container{
     width: 100%;
-    background-color:  rgb(119, 106, 106);
+    background-color:  rgb(40, 40, 40);
     padding:2rem;
     margin-top: 5rem;
     display: flex;
@@ -67,6 +67,9 @@ nav{
     overflow: hidden;
 
 }
+.delivery-info{
+    border-radius: 2rem;
+}
 .delivery-info div{
     padding: .4rem;
 }
@@ -74,6 +77,9 @@ nav{
     display: flex;
     justify-content: space-between;
     
+}
+.order-info{
+    border-radius: 2rem;
 }
 .order-info div{
     padding: .4rem;
@@ -87,4 +93,10 @@ nav{
     width: 8rem;
     background-color: rgb(72, 71, 71);
     
+}
+@media only screen and (max-width: 468px)  {
+    /* portrait phones */
+    html{
+        font-size: 50%;
+    }
 }
