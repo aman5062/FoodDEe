@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+nav{
+    font-family:'Times New Roman', Times, serif;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(229, 132, 14);
+    box-shadow: 0px 0px 1.5rem 1rem rgba(0,0,0,.5);
+    height: 10rem;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position:fixed;
+    z-index: 1;
+    font-size: 3rem;
+}
+#main-box-container{
+    width: 100%;
+    margin-top: 10rem;
+    border: 2px rgb(229, 132, 14) solid ; 
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
+}
+.main-box{
+    width: 100%;
+    background-color: rgb(32, 49, 49);
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    gap: 1rem; 
+}
+
+.image-details-container{
+    width: 50%;
+    height: 13rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+}
+.image-details-container .img-container{
+    width: 30%;
+    margin: .5rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    border: 2px rgb(229, 132, 14) solid ;
+}
+.image-details-container .details-container{
+    width: 70%;
+    margin: .4rem;
+    background-color: aliceblue;
+    border-radius: 2rem;
+    border: 2px rgb(229, 132, 14) solid ;
+}
+.image-details-container p{
+    margin: .4rem;
+    padding: 1.02rem;
+
+}
+.upload-delete-container{
+    width: 50%;
+    height: 13rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+}
+.upload-delete-container div{
+    width: 50%;
+    margin: .4rem;
+    /* background-color: aliceblue; */
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.upload-delete-container button{
+    padding: 1rem;
+    margin-top: 4rem;
+    transform: translateX(.7rem);
+    border-radius: 2rem;
+    transition: all .6s linear;
+    border: 2px rgb(229, 132, 14) solid ;
+   
+}
+.upload-delete-container button:hover{
+    background-color: rgb(229, 132, 14);
+    border: 2px white solid ;
+}
+@media only screen and (max-width: 468px)  {
+    /* portrait phones */
+    html{
+        font-size: 50%;
+    }
+}
