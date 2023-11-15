@@ -1,0 +1,153 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+nav{
+    font-family:'Times New Roman', Times, serif;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: rgb(255, 234, 0);
+    box-shadow: 0px 0px 1.5rem 1rem rgba(0,0,0,.5);
+    height: 10rem;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    position:fixed;
+    z-index: 1;
+    font-size: 3rem;
+}
+
+#upload{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(32, 49, 49);
+    margin-top: 10rem;
+}
+
+#upload .main-box{
+    width: 70%;
+    height: 90%;
+    background-color: rgb(230, 230, 230);
+    position: absolute;
+    top: 50%;
+    transform: translate(22%,-50%);
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    /* justify-content: space-evenly; */
+    border-radius: 3rem;
+    overflow: hidden;
+}
+#upload .main-box div{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* height: 13%; */
+    font-size: 2rem;
+}
+.main-box .img-container{
+    flex-grow:4;
+    background-color: red;
+    height: 3rem;
+  
+}
+.main-box .img-container .food-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.main-box .name-details{
+    flex-grow: 1;
+    border: .2px black solid;
+    background-color: aliceblue;
+
+    
+}
+.main-box .cost-details{
+    flex-grow: 1;
+    border: .2px black solid;
+    background-color: aliceblue;
+
+}
+.main-box .description-details{
+    flex-grow: 1;
+    border: .2px black solid;
+    background-color: aliceblue;
+
+}
+.main-box .type-details{
+    flex-grow: 1;
+    border: .2px black solid;
+    background-color: aliceblue;
+
+}
+.main-box .upload-details{
+    flex-grow: 1;
+    border: .2px black solid;
+    background-color: aliceblue;
+
+}
+.name-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.cost-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.description-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.description-details .get-description input{
+    height: 10rem;
+}
+.type-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.upload-details{
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+.upload-details button{
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px .5rem .1rem rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: all .6s linear;
+}
+.upload-details button:hover{
+    background-color: rgb(81, 81, 81);
+    color: aliceblue;
+
+}
+@media only screen and (max-width: 468px)  {
+    /* portrait phones */
+    html{
+        font-size: 50%;
+    }
+}
