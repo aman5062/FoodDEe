@@ -13,10 +13,11 @@ nav{
     width: 100%;
     background-color: #FF1A1A;
     box-shadow: 0px 0px 1.5rem 1rem rgba(0,0,0,.5);
-    height: 10rem;
+    height: 15rem;
     display: flex;
     justify-content: space-between;
     padding: 1.4rem;
+    align-items: center;
     position:fixed;
     z-index: 1;
    
@@ -77,14 +78,16 @@ nav .cart-container .cart a:hover{
     cursor: pointer;
 }
 .filter{
-    margin-top: 10rem; 
+    margin-top: 20rem; 
     margin-left: -5rem;
     width: 100%;
     display: flex;
     justify-content: right;
+    
 }
 .food-selector{
-    color: rgb(72, 71, 71)
+    color: rgb(72, 71, 71);
+    
 }
 #food-suggestions{
     margin-top: 7rem;
@@ -385,7 +388,7 @@ nav .cart-container .cart a:hover{
         /* height: 5vh; */
     }
     .box-container .box{
-        height: 45vh;
+        height: 70rem;
     }
     .content h2{
         
