@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style1.css">
   </head>
   <body>
-    <div class="center">
+    <div class="center adress">
       <h1>Address Page</h1>
       <form method="post">
         <div class="txt_field">
@@ -24,16 +24,18 @@
           <span></span>
           <label><b>Alternate Phone No.</b></label>
         </div>
-        <div class="txt_field">
+        <div style="display: flex;">
+          <div class="txt_field" style="width: 50%; margin-right:20px;">
             <input type="text" name="pincode" id="pincode" pattern="[0-9]{6}" required>
             <span></span>
             <label><b>Pincode</b></label>
           </div>
-          <div class="txt_field">
+          <div class="txt_field" style="width: 50%;">
             <input type="text" name="city" id="city" required>
             <span></span>
             <label><b>City</b></label>
           </div>
+        </div>
           <div class="txt_field">
             <input type="text" name="state" id="state" required>
             <span></span>

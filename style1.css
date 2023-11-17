@@ -39,7 +39,7 @@ form .txt_field{
 .txt_field input{
   width: 100%;
   padding: 0 5px;
-  height: 40px;
+  height: 25px;
   font-size: 16px;
   border: none;
   background: none;
@@ -58,7 +58,7 @@ form .txt_field{
 .txt_field span::before{
   content: '';
   position: absolute;
-  top: 40px;
+  top: 25px;
   left: 0;
   width: 0%;
   height: 2px;
@@ -110,4 +110,7 @@ input[type="submit"]:hover{
 }
 .signup_link a:hover{
   text-decoration: underline;
+}
+.address input{
+  width: max-content;
 }
